@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,12 +7,13 @@
 
 body{ 
     height: 100vh;
-    background-color: #2a9d8f;
+    background-image: url(../img/img.png);
+    background-size: contain;
+    background-position: center;
 }
 
 .container{
     position: absolute;
-    border: white 2px solid;
     width: 40%;
     min-width: 450px;
     transform: translate(-50%, -50%);
@@ -66,3 +68,36 @@ body{
     border-radius: 8px;
     box-shadow:  15px 10px 5px #005f73;
 }
+
+.task{
+    background-color:#ffffff;
+    display: flex;
+    padding: 5px 10px;
+    height: 50px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #e5e5e5 solid 2px;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.task button{
+    background-color: #84a59d;
+    color: #ffffff;
+    width: 40px;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+} 
